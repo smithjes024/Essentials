@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 297382197}
   - component: {fileID: 297382193}
   - component: {fileID: 297382196}
+  - component: {fileID: 297382199}
   m_Layer: 10
   m_Name: Mob_Spike
   m_TagString: Untagged
@@ -469,6 +470,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.44, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: -0.03, z: 0}
+--- !u!95 &297382199
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297382192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 82f41ad6a5fb053449f7bc6fe1a61022, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &300239042
 GameObject:
   m_ObjectHideFlags: 0
