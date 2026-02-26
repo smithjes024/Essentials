@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: 8901149397127271248}
   - component: {fileID: 639562038069188732}
   - component: {fileID: 4059051210592673624}
-  - component: {fileID: 3289453791004705079}
   m_Layer: 3
   m_Name: PlayerArt
   m_TagString: Untagged
@@ -226,34 +225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: {fileID: 0}
---- !u!114 &3289453791004705079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6690623894196972054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f686339384b344575acee270e4dc6bbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3289453791004705079}
-        m_TargetAssemblyTypeName: IdBehaviour, Assembly-CSharp
-        m_MethodName: ChangeId
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: NameId, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Player
-          m_BoolArgument: 0
-        m_CallState: 2
-  nameIdObj: {fileID: 0}
 --- !u!1 &8172089203513589298
 GameObject:
   m_ObjectHideFlags: 0
