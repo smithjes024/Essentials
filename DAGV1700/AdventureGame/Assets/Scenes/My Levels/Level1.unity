@@ -278,11 +278,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3729480264920419690, guid: dcf484c3fd54b4c0a93bb9c7fffccd26, type: 3}
   m_PrefabInstance: {fileID: 437868554}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &119347232 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5051844520048712312, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
-  m_PrefabInstance: {fileID: 7255035169254344313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &126849930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8717,7 +8712,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 119347232}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -8729,7 +8724,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1291049814}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -8741,7 +8736,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1519241229}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -8786,7 +8781,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 119347232}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
@@ -8798,7 +8793,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1519241229}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
@@ -8810,7 +8805,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1519241229}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
@@ -20417,11 +20412,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadType: 0
---- !u!212 &1291049814 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5853162927370777168, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
-  m_PrefabInstance: {fileID: 7255035169254344313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1292156526
 GameObject:
   m_ObjectHideFlags: 0
@@ -26424,11 +26414,6 @@ Transform:
   - {fileID: 750750328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1519241229 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5881088043687859882, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
-  m_PrefabInstance: {fileID: 7255035169254344313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538944341
 GameObject:
   m_ObjectHideFlags: 0
@@ -27111,7 +27096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 2
+  jumpForce: 1
   gravity: -9.81
 --- !u!114 &1684697552
 MonoBehaviour:
@@ -29542,7 +29527,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4059051210592673624, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8495263280266127753, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
+    - {fileID: 8172089203513589298, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
+    - {fileID: 2549471012961170934, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6690623894196972054, guid: 3a531f19b1ce471459eaf2aa80b52f25, type: 3}
