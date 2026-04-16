@@ -15,7 +15,7 @@ public class MySimpleImageBehaviour : MonoBehaviour
     public void UpdateWithFloatData()
     {
         imageObj.fillAmount = dataObj.value;
-        if (dataObj.value <= 0)
+        if (dataObj.value <= 0f)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
