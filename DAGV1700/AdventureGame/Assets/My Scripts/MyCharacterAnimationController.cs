@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class MyCharacterAnimationController : MonoBehaviour
 {
     public CharacterController controller;
@@ -9,7 +10,7 @@ public class MyCharacterAnimationController : MonoBehaviour
         idle = Animator.StringToHash("Idle"),
         jump = Animator.StringToHash("Jump"),
         wallJump = Animator.StringToHash("WallJump");
- 
+
 
     private void Start()
     {
@@ -18,18 +19,18 @@ public class MyCharacterAnimationController : MonoBehaviour
         //controller in parent object
         controller = GetComponentInParent<CharacterController>();
     }
- 
+
 
     private void Update()
     {
         HandleAnimations();
     }
- 
+
 
     private void HandleAnimations()
     {
         float horizontalMove = Input.GetAxisRaw("Horizontal");
- 
+
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -39,7 +40,7 @@ public class MyCharacterAnimationController : MonoBehaviour
         {
             animator.SetBool(jump, false);
         }
- 
+
 
         if (Mathf.Abs(horizontalMove) > 0 && !animator.GetBool(jump))
         {

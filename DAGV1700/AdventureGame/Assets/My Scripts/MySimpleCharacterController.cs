@@ -1,22 +1,37 @@
 using UnityEngine;
 
+
+/// <summary>
+/// The SimpleCharacterController class controls basic movement of a 2D platformer character.
+/// This includes horizontal movement and jumping, adding gravity, and maintaining character position on the x-axis.
+/// </summary>
+[Tooltip("Controls basic movement of a 2D platformer character.")]
+[RequireComponent(typeof(CharacterController))]
 public class MySimpleCharacterController : MonoBehaviour
 {
     [Tooltip("The speed at which the character moves horizontally.")]
     public float moveSpeed = 5f;
 
+
     [Tooltip("The upward force applied when the character jumps.")]
     public float jumpForce = 4f;
 
+
     [Tooltip("The constant downward force applied by gravity.")]
     public float gravity = -9.81f;
+
 
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
     private int jumpCount = 0;
     private int maxJumps = 2;
- /// <summary>
+    //add a roll to the character controller
+
+
+
+
+    /// <summary>
     /// Initialize required components.
     /// </summary>
     private void Start()
@@ -24,6 +39,7 @@ public class MySimpleCharacterController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
     }
+
 
     /// <summary>
     /// Controls character movement and position every frame.
@@ -36,6 +52,7 @@ public class MySimpleCharacterController : MonoBehaviour
         KeepCharacterOnXAxis();
     }
 
+
     /// <summary>
     /// Handles horizontal movement and jumping.
     /// </summary>
@@ -46,6 +63,7 @@ public class MySimpleCharacterController : MonoBehaviour
         var move = new Vector3(moveInput, 0f, 0f) * (moveSpeed * Time.deltaTime);
         controller.Move(move);
 
+
         // Handle jumping
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
@@ -53,6 +71,7 @@ public class MySimpleCharacterController : MonoBehaviour
             jumpCount++;
         }
     }
+
 
     /// <summary>
     /// Defines the character's behavior under gravity.
@@ -63,7 +82,6 @@ public class MySimpleCharacterController : MonoBehaviour
         if (!controller.isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
-
         }
         else
         {
@@ -72,9 +90,11 @@ public class MySimpleCharacterController : MonoBehaviour
             jumpCount = 0;
         }
 
+
         // Apply velocity
         controller.Move(velocity * Time.deltaTime);
     }
+
 
     /// <summary>
     /// Ensures the character remains on the x-axis.
